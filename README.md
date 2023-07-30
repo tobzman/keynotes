@@ -1,15 +1,12 @@
 # keynotes
 
-
 ![Note Taker Screenshot](./screenshot.png)
 
 ## Description
 
-Note Taker is a web application that allows users to write and save notes. It provides a simple and intuitive interface for organizing thoughts and keeping track of tasks.
+Note Taker is a web application that allows users to write and save notes. It provides a simple and intuitive interface for organising thoughts and keeping track of tasks.
 
 The application uses an Express.js back end to handle API routes and a JSON file to store the note data. Users can create new notes, view existing notes, and delete notes they no longer need.
-
-This project was developed as part of the [edX Boot Camp](https://bootcamp.edx.org) curriculum.
 
 ## Table of Contents
 
@@ -27,3 +24,4 @@ To run the Note Taker application locally, follow these steps:
 
    ```shell
    git clone https://github.com/your-username/note-taker.git
+   ```
