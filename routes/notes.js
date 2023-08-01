@@ -38,11 +38,11 @@ notes.get("/:note_id", (req, res) => {
 // DELETE Route for deleting a note by ID
 notes.delete("/.id", (req, res) => {
   const noteId = req.params.id;
-  readFromFile("./db/db.json")
+  readFromFile("db/db.json")
     .then((data) => JSON.parse(data))
     .then((json) => {
       const result = json.filter((note) => id !== noteId);
-      writeToFile("./db/db.json", result);
+      writeToFile("db/db.json", result);
       res.json(`Item ${noteId} has been deleted`);
     })
     .catch((err) => {
@@ -64,14 +64,13 @@ notes.post("/", (req, res) => {
     text,
   };
 
-  readAndAppend(newNote, "db/db.json")
-    .then(() => {
-      res.json(`Note added sucessfully`);
-    })
-    .catch((err) => {
-      console.error(err);
-      res.status(500).json({ error: "Error in adding note." });
-    });
+  readAndAppend(newNote, "db/db.json");
+  const response = {
+    status: "success",
+    body: "Note added successfully!",
+  };
+
+  res.json(response);
 });
 
 module.exports = notes;
