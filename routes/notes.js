@@ -4,7 +4,7 @@ const {
   readAndAppend,
   readFromFile,
   writeToFile,
-} = require("../db/helpers/fsUtils");
+} = require("./helpers/fsUtils");
 
 // GET Route for retrieving all the notes
 notes.get("/", (req, res) => {
@@ -36,12 +36,12 @@ notes.get("/:note_id", (req, res) => {
 });
 
 // DELETE Route for deleting a note by ID
-notes.delete("/:note_id", (req, res) => {
-  const noteId = req.params.note_id;
+notes.delete("/:.id", (req, res) => {
+  const noteId = req.paramsid;
   readFromFile("./db/db.json")
     .then((data) => JSON.parse(data))
     .then((json) => {
-      const result = json.filter((note) => note.note_id !== noteId);
+      const result = json.filter((note) => id !== noteId);
       writeToFile("./db/db.json", result);
       res.json(`Item ${noteId} has been deleted`);
     })
@@ -59,7 +59,7 @@ notes.post("/", (req, res) => {
   }
 
   const newNote = {
-    note_id: uuidv4(),
+    id: uuidv4(),
     title,
     text,
   };
