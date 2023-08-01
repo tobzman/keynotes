@@ -4,7 +4,7 @@
 
 Note Taker is a simple web application that allows users to write, save, and manage their notes. It uses an Express.js back end to handle API routes and store note data in a JSON file.
 
-![Note Taker Screenshot](README.md)
+![Note Taker Screenshot]![Alt text](Screenshot.png)
 
 ## Table of Contents
 
