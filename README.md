@@ -1,6 +1,6 @@
 # keynotes
 
-![Note Taker Screenshot](./screenshot.png)
+![Note Taker Screenshot]![Alt text](Screenshot.png)
 
 ## Description
 
@@ -25,3 +25,8 @@ To run the Note Taker application locally, follow these steps:
    ```shell
    git clone https://github.com/your-username/note-taker.git
    ```
+
+## Links
+
+https://notetaker66-c0642222f502.herokuapp.com/notes
+http://localhost:3001/notes
