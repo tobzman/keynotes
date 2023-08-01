@@ -42,9 +42,9 @@ Note Taker is a simple web application that allows users to write, save, and man
 
 ## API Routes
 
-. GET /api/notes: Retrieves all saved notes as JSON.
-. POST /api/notes: Receives a new note to save on the request body, adds it to the notes, and returns the new note.
-. DELETE /api/notes/:id: Receives the ID of a note to delete, removes the note from the notes, and returns a success message.
+- GET /api/notes: Retrieves all saved notes as JSON.
+- POST /api/notes: Receives a new note to save on the request body, adds it to the notes, and returns the new note.
+- DELETE /api/notes/:id: Receives the ID of a note to delete, removes the note from the notes, and returns a success message.
 
 ## Demo
 
